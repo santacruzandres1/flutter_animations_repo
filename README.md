@@ -4,7 +4,7 @@ Este repositorio contiene un conjunto de animaciones reutilizables y widgets ani
 
 ## Características
 
-- **Animaciones reutilizables**: Animaciones comunes como desvanecimiento, deslizamiento, escala y rotación.
+- **Animaciones reutilizables**: Animaciones como desvanecimiento, deslizamiento, escala, rotación entre otras.
 - **Widgets animados**: Widgets personalizados que utilizan las animaciones incluidas.
 - **Utilidades**: Funciones auxiliares para facilitar el trabajo con animaciones.
 - **Extensible y mantenible**: Estructurado para facilitar la expansión y el mantenimiento.
@@ -61,7 +61,7 @@ class MyWidget extends StatelessWidget {
 }
 ```
 ## Proyecto de Ejemplo
-Podes encontrar un ejemplos en el directorio example/.
+Podes encontrar un ejemplo en el directorio example/.
 
 ```sh
 
@@ -84,7 +84,8 @@ flutter_animations_repo/
 │   │   └── widget_examples/
 │   │       ├── animated_button_example.dart
 │   │       ├── animated_container_example.dart
-│   │       └── liquid_linear_progress_indicator_example.dart
+│   │       ├── liquid_linear_progress_indicator_example.dart
+│   │       └── custom_circular_progress_indicator_example.dart
 │   └── pubspec.yaml
 ├── lib/
 │   ├── src/
@@ -93,7 +94,8 @@ flutter_animations_repo/
 │   │   │   ├── rotate_animation.dart
 │   │   │   ├── scale_animation.dart
 │   │   │   ├── slide_animation.dart
-│   │   │   └── wave_animation.dart
+│   │   │   ├── wave_animation.dart
+│   │   │   └── radial_progress.dart
 │   │   ├── extensions/
 │   │   ├── models/
 │   │   ├── utils/
@@ -101,7 +103,8 @@ flutter_animations_repo/
 │   │   └── widgets/
 │   │       ├── animated_button.dart
 │   │       ├── animated_container.dart
-│   │       └── liquid_linear_progress_indicator.dart
+│   │       ├── liquid_linear_progress_indicator.dart
+│   │       └── custom_circular_progress_indicator.dart
 │   └── flutter_animations_repo.dart
 ├── LICENSE
 ├── pubspec.yaml
@@ -109,21 +112,22 @@ flutter_animations_repo/
 ├── test/
 │   ├── animations/
 │   │   ├── fade_animation_test.dart
-│   │   └── slide_animation_test.dart
+│   │   ├── slide_animation_test.dart
+│   │   └── radial_progress_test.dart
 │   ├── utils/
 │   │   └── animation_utils_test.dart
 │   └── widgets/
-│       └── animated_button_test.dart
+│       ├── animated_button_test.dart
+│       └── custom_circular_progress_indicator_test.dart
 └── .gitignore
-
 ```
 
 ## Contribuir
 ¡Contribuciones son bienvenidas! Por favor, abre un issue para discutir lo que te gustaría cambiar o aportar.
-
-* Haz un fork del proyecto
-* Crea una rama con tu nueva funcionalidad (git checkout -b feature/nueva-funcionalidad) 
-* Haz commit de tus cambios (git commit -m 'Agregar nueva funcionalidad')
-* Haz push a la rama (git push origin feature/nueva-funcionalidad)
+#### Para colaborar necesitarás
+* Hacer un fork del proyecto
+* Crear una rama con tu nueva funcionalidad (git checkout -b feature/nueva-funcionalidad) 
+* Hacer commit de tus cambios (git commit -m 'Agregar nueva funcionalidad')
+* Hacer push a la rama (git push origin feature/nueva-funcionalidad)
 * Abre un Pull Request
 # flutter_animations_repo
