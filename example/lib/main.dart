@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'widget_examples/liquid_linear_progress_indicator_example.dart';
+
+import '../config/theme/app_theme.dart';
+import 'widget_examples/widget_exmples.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,15 +13,15 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: _buildBody(),
-      ),
+      theme: AppTheme().getTheme(),
+      debugShowCheckedModeBanner: false,
+      home: _homeBuilder(),
     );
   }
 
-  Widget _buildBody() {
-    return const Center(
-      child: LiquidLinearProgressIndicatorExample(),
-    );
+  Widget _homeBuilder() {
+    return const SafeArea(
+      child: CustomCircularProgressIndicatorExample(),
+      );
   }
 }
